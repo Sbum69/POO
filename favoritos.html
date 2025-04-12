@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicadores Online</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+    <header>
+        <img src="fotos/descarregar.png" alt="Logo do Site" id="logo"> <!-- Adicionando o logo -->
+        <h1>Encontre seu Explicador</h1>
+        <input type="text" id="search" placeholder="Procure por disciplina ou nome">
+        <button onclick="buscarExplicadores()">Buscar</button>
+        <a href="Main.HTML">
+        <button onclick="aplicarFavoritos()">Home</button>
+    </a>
+        <button onclick="aplicarFiltros()">Filtrar</button> <!-- Botão de Filtrar -->
+        
+    </header>
+        <div id="filters" style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center;">
+            <label for="distancia">Distância:</label>
+            <select id="distancia">
+                <option value="perto">Perto de mim</option>
+                <option value="longe">Mais distante</option>
+            </select>
+            
+            <label for="preco">Preço:</label>
+            <select id="preco">
+                <option value="barato">Mais barato</option>
+                <option value="caro">Mais caro</option>
+            </select>
+            
+            <label for="nivel">Nível de Escolaridade:</label>
+            <select id="nivel">
+                <option value="fundamental">Ensino básico</option>
+                <option value="medio">Ensino secundário</option>
+                <option value="superior">Universidade</option>
+            </select>
+
+            <label for="nivel">Disciplinas</label>
+            <select id="nivel">
+                <option value="fundamental">Português</option>
+                <option value="medio">Matemática</option>
+                <option value="superior">Geografia</option>
+                <option value="superior">Algoritmia</option>
+                <option value="superior">Inglês</option>
+            </select>
+            
+            
+            <p> <label for="tipo">Tipo de Aula:</label>
+            <select id="tipo">
+                <option value="presencial">Presencial</option>
+                <option value="online">Online</option>
+            </select>
+            
+            <label for="disponibilidade">Disponibilidade:</label>
+            <select id="disponibilidade">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+        </div>
+
+    </header>
+    
+    <main>
+        <section id="resultados">
+            <h2>Favoritos</h2>
+            <ul id="listaExplicadores">
+                <!-- Os explicadores encontrados serão listados aqui -->
+            </ul>
+        </section>
+
+        <main>
+            <div id="explicadores-list">
+                <div class="card">
+                    <a href="Ricardo.html">
+                    <img src="fotos/OIP (19).jpeg" alt="Explicador">
+                    <div class="favorite-icon">❤️</div>
+                    <div class="card-info">
+                        <h3>Ricardo</h3>
+                        <p>Porto (Online)</p>
+                        <p>Algoritmia</p>
+                    </div>
+                </a>
+                </div>
+
+                <div id="explicadores-list">
+    <div class="card">
+        <a href="vinicius.html">
+            <img src="fotos/foto1.jpg" alt="Explicador">
+            <div class="favorite-icon">❤️</div>
+            <div class="card-info">
+                <h3>Vinícius Perreira</h3>
+                <p>Porto (Online)</p>
+                <p>Português</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div id="explicadores-list">
+    <div class="card">
+        <a href="CamilaR.html">
+        <img src="fotos/foto10.jpg" alt="Explicador">
+        <div class="favorite-icon">❤️</div>
+        <div class="card-info">
+            <h3>Camila Rocha</h3>
+            <p>Porto (Online)</p>
+            <p>Matemática</p>
+        </div>
+    </a>
+    </div>
+
+
+
+<div id="explicadores-list">
+    <div class="card">
+        <a href="AnaPaula.html">
+        <img src="fotos/foto21.jpg" alt="Explicador">
+        <div class="favorite-icon">❤️</div>
+        <div class="card-info">
+            <h3>Ana Paula</h3>
+            <p>Porto (Online)</p>
+            <p>Geografia</p>
+        </div>
+    </a>
+    </div>
+
+    <div id="explicadores-list">
+        <div class="card">
+            <a href="Densie.html">
+            <img src="fotos/foto9.jpg" alt="Explicador">
+            <div class="favorite-icon">❤️</div>
+            <div class="card-info">
+                <h3>Denise Vanda</h3>
+                <p>Porto (Online)</p>
+                <p>Português</p>
+            </div>
+        </a>
+        </div>
+</main>
+

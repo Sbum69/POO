@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicadores Online</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<header>
+    <img src="fotos/descarregar.png" alt="Logo do Site" id="logo">
+    
+    <div class="profile-container">
+        <a href="sign up e login.html"> <!-- Link para a página desejada -->
+            <img src="/fotos/user.jpg" alt="Foto de Perfil" class="profile-pic">
+        </a>
+        <h2>Nome do Usuário</h2>
+    </div>
+    
+
+    <h1>Encontre seu Explicador</h1>
+    <input type="text" id="search" placeholder="Digite a disciplina">
+    <button onclick="buscarExplicadores()">Buscar</button>
+    
+    <a href="favoritos.html">
+        <button>Favoritos</button>
+    </a>
+
+    <button onclick="aplicarFiltros()">Filtrar</button> <!-- Botão de Filtrar -->
+</header>
+
+        <div id="filters" style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center;">
+            <label for="distancia">Distância:</label>
+            <select id="distancia">
+                <option value="perto">Perto de mim</option>
+                <option value="longe">Mais distante</option>
+            </select>
+            
+            <label for="preco">Preço:</label>
+            <select id="preco">
+                <option value="barato">Mais barato</option>
+                <option value="caro">Mais caro</option>
+            </select>
+            
+            <label for="nivel">Nível de Escolaridade:</label>
+            <select id="nivel">
+                <option value="fundamental">Ensino básico</option>
+                <option value="medio">Ensino secundário</option>
+                <option value="superior">Universidade</option>
+            </select>
+
+            <label for="nivel">Disciplinas</label>
+            <select id="nivel">
+                <option value="fundamental">Português</option>
+                <option value="medio">Matemática</option>
+                <option value="superior">Geografia</option>
+                <option value="superior">Algoritmia</option>
+                <option value="superior">Inglês</option>
+            </select>
+            
+            
+            <p> <label for="tipo">Tipo de Aula:</label>
+            <select id="tipo">
+                <option value="presencial">Presencial</option>
+                <option value="online">Online</option>
+            </select>
+            
+            <label for="disponibilidade">Disponibilidade:</label>
+            <select id="disponibilidade">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+        </div>
+
+    </header>
+    
+    <main>
+        <section id="resultados">
+            <h2>Sugestões</h2>
+            <ul id="listaExplicadores">
+                <!-- Os explicadores encontrados serão listados aqui -->
+            </ul>
+        </section>
+
+        <main>
+            <div id="explicadores-list">
+                <div class="card">
+                    <a href="Ricardo.html">
+                    <img src="fotos/OIP (19).jpeg" alt="Explicador">
+                    <div class="favorite-icon">❤️</div>
+                    <div class="card-info">
+                        <h3>Ricardo</h3>
+                        <p>Porto (Online)</p>
+                        <p>Algoritmia</p>
+                    </div>
+                </a>
+                </div>
+
+                <div id="explicadores-list">
+    <div class="card">
+        <a href="vinicius.html">
+            <img src="fotos/foto1.jpg" alt="Explicador">
+            <div class="favorite-icon">❤️</div>
+            <div class="card-info">
+                <h3>Vinícius Perreira</h3>
+                <p>Porto (Online)</p>
+                <p>Português</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+                        <div id="explicadores-list">
+                            <div class="card">
+                                <a href="CamilaR.html">
+                                <img src="fotos/foto10.jpg" alt="Explicador">
+                                <div class="favorite-icon">❤️</div>
+                                <div class="card-info">
+                                    <h3>Camila Rocha</h3>
+                                    <p>Porto (Online)</p>
+                                    <p>Matemática</p>
+                                </div>
+                            </a>
+                            </div>
+
+
+
+                        <div id="explicadores-list">
+                            <div class="card">
+                                <a href="AnaPaula.html">
+                                <img src="fotos/foto21.jpg" alt="Explicador">
+                                <div class="favorite-icon">❤️</div>
+                                <div class="card-info">
+                                    <h3>Ana Paula</h3>
+                                    <p>Porto (Online)</p>
+                                    <p>Geografia</p>
+                                </div>
+                            </a>
+                            </div>
+
+                            <div id="explicadores-list">
+                                <div class="card">
+                                    <a href="Densie.html">
+                                    <img src="fotos/foto9.jpg" alt="Explicador">
+                                    <div class="favorite-icon">❤️</div>
+                                    <div class="card-info">
+                                        <h3>Denise Vanda</h3>
+                                        <p>Porto (Online)</p>
+                                        <p>Português</p>
+                                    </div>
+                                </a>
+                                </div>
+    </main>
+
+
+    <section id="resultados">
+        <h2>Português</h2>
+        <ul id="listaExplicadores">
+            <!-- Os explicadores encontrados serão listados aqui -->
+        </ul>
+
+        <main>
+            <div id="explicadores-list">
+                <div class="card">
+                    <a href="vinicius.html">
+                    <img src="fotos/foto1.jpg" alt="Explicador">
+                    <div class="favorite-icon"></div>
+                    <div class="card-info">
+                        <h3>Vinícius Perreira</h3>
+                        <p>Porto (Online)</p>
+                    </div>
+                    <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                </a>
+                </div>
+                    <div id="explicadores-list">
+                        <div class="card">
+                            <a href="EduardoG.html">
+                            <img src="fotos/foto2.jpg" alt="Explicador">
+                            <div class="favorite-icon"></div>
+                            <div class="card-info">
+                                <h3>Eduardo Gonçalves</h3>
+                                <p>Porto (Online)</p>
+                            </div>
+                            <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                        </a>
+                        </div>
+
+                        <div id="explicadores-list">
+                            <div class="card">
+                                <a href="EduardoG.html">
+                                <img src="fotos/foto3.png" alt="Explicador">
+                                <div class="favorite-icon"></div>
+                                <div class="card-info">
+                                    <h3>Fernando Teixeira</h3>
+                                    <p>Porto (Online)</p>
+                                </div>
+                                <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                            </a>
+                            </div>
+
+                        <div id="explicadores-list">
+                            <div class="card">
+                                <a href="Thiago.html">
+                                <img src="fotos/foto4.jpg" alt="Explicador">
+                                <div class="favorite-icon"></div>
+                                <div class="card-info">
+                                    <h3>Thiago Barbosa</h3>
+                                    <p>Porto (Online)</p>
+                                </div>
+                                <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                            </a>
+                            </div>
+
+                        <div id="explicadores-list">
+                            <div class="card">
+                                <a href="Densie.html">
+                                <img src="fotos/foto9.jpg" alt="Explicador">
+                                <div class="favorite-icon"></div>
+                                <div class="card-info">
+                                    <h3>Denise Vanda</h3>
+                                    <p>Porto (Online)</p>
+                                </div>
+                                <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button>
+                            </a>
+                            </div>
+    </main>
+
+        <section id="resultados">
+            <h2>Matemática</h2>
+            <ul id="listaExplicadores">
+                <!-- Os explicadores encontrados serão listados aqui -->
+            </ul>
+            <main>
+
+                    <div id="explicadores-list">
+                        <div class="card">
+                            <a href="Mariana.html">
+                            <img src="fotos/foto7.jpg" alt="Explicador">
+                            <div class="favorite-icon"></div>
+                            <div class="card-info">
+                                <h3>Mariana Alves</h3>
+                                <p>Porto (Online)</p>
+                            </div>
+                            <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button>
+                        </a>
+                        </div>
+    
+                    <div id="explicadores-list">
+                        <div class="card">
+                            <a href="CamilaR.html">
+                            <img src="fotos/foto10.jpg" alt="Explicador">
+                            <div class="favorite-icon"></div>
+                            <div class="card-info">
+                                <h3>Camila Rocha</h3>
+                                <p>Porto (Online)</p>
+                            </div>
+                            <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button>
+                        </a>
+                        </div>
+
+                            
+                    <div id="explicadores-list">
+                        <div class="card">
+                            <a href="Helena.html">
+                            <img src="fotos/foto11.jpg" alt="Explicador">
+                            <div class="favorite-icon"></div>
+                            <div class="card-info">
+                                <h3>Helena Ribeira</h3>
+                                <p>Porto (Online)</p>
+                            </div>
+                            <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                        </a>
+                        </div>
+
+                            <div id="explicadores-list">
+                                <div class="card">
+                                    <a href="Victoria.html">
+                                    <img src="fotos/foto8.jpg" alt="Explicador">
+                                    <div class="favorite-icon"></div>
+                                    <div class="card-info">
+                                        <h3>Victoria Souza</h3>
+                                        <p>Porto (Online)</p>
+                                    </div>
+                                    <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                </a>
+                                </div>
+
+                                <div id="explicadores-list">
+                                    <div class="card">
+                                        <a href="Daniela.html">
+                                        <img src="fotos/foto5.webp" alt="Explicador">
+                                        <div class="favorite-icon"></div>
+                                        <div class="card-info">
+                                            <h3>Daniela Ferreira</h3>
+                                            <p>Porto (Online)</p>
+                                        </div>
+                                        <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                    </a>
+                                    </div>
+        </main>
+
+            <section id="resultados">
+                <h2>Inglês</h2>
+                <ul id="listaExplicadores">
+                    <!-- Os explicadores encontrados serão listados aqui -->
+                </ul>
+                <main>
+                    <div id="explicadores-list">
+                        <div class="card">
+                            <img src="fotos/foto12.jpg" alt="Explicador">
+                            <div class="favorite-icon"></div>
+                            <div class="card-info">
+                                <h3>Mateus Lima</h3>
+                                <p>Porto (Online)</p>
+                                <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                            </div>
+                        </div>
+        
+                        <div id="explicadores-list">
+                            <div class="card">
+                                <img src="fotos/foto13.jpg" alt="Explicador">
+                                <div class="favorite-icon"></div>
+                                <div class="card-info">
+                                    <h3>Gabriel Santos</h3>
+                                    <p>Porto (Online)</p>
+                                    <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                </div>
+                            </div>
+        
+                            <div id="explicadores-list">
+                                <div class="card">
+                                    <img src="fotos/foto14.jpg" alt="Explicador">
+                                    <div class="favorite-icon"></div>
+                                    <div class="card-info">
+                                        <h3>Thiago Barbosa</h3>
+                                        <p>Porto (Online)</p>
+                                        <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                    </div>
+                                </div>
+        
+                            <div id="explicadores-list">
+                                <div class="card">
+                                    <img src="fotos/foto15.avif" alt="Explicador">
+                                    <div class="favorite-icon"></div>
+                                    <div class="card-info">
+                                        <h3>Fernando Teixeira</h3>
+                                        <p>Porto (Online)</p>
+                                        <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                    </div>
+                                </div>
+        
+                                <div id="explicadores-list">
+                                    <div class="card">
+                                        <img src="fotos/foto16.jpg" alt="Explicador">
+                                        <div class="favorite-icon"></div>
+                                        <div class="card-info">
+                                            <h3>André Cardoso</h3>
+                                            <p>Porto (Online)</p>
+                                            <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                        </div>
+                                    </div>
+            </main>
+
+
+            <section id="resultados">
+                <h2>Geografia</h2>
+                <ul id="listaExplicadores">
+                    <!-- Os explicadores encontrados serão listados aqui -->
+                </ul>
+                <main>
+                    <div id="explicadores-list">
+                        <div class="card">
+                            <img src="fotos/foto17.jpeg" alt="Explicador">
+                            <div class="favorite-icon"></div>
+                            <div class="card-info">
+                                <h3>Beatriz Nogueira</h3>
+                                <p>Porto (Online)</p>
+                                <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                            </div>
+                        </div>
+        
+                        <div id="explicadores-list">
+                            <div class="card">
+                                <img src="fotos/foto18.jpg" alt="Explicador">
+                                <div class="favorite-icon"></div>
+                                <div class="card-info">
+                                    <h3>Laura Mendes</h3>
+                                    <p>Porto (Online)</p>
+                                    <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                </div>
+                            </div>
+        
+                            <div id="explicadores-list">
+                                <div class="card">
+                                    <img src="fotos/foto19.jpg" alt="Explicador">
+                                    <div class="favorite-icon"></div>
+                                    <div class="card-info">
+                                        <h3>Gabriela Costa</h3>
+                                        <p>Porto (Online)</p>
+                                        <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                    </div>
+                                </div>
+        
+                            <div id="explicadores-list">
+                                <div class="card">
+                                    <img src="fotos/foto20.jpg" alt="Explicador">
+                                    <div class="favorite-icon"></div>
+                                    <div class="card-info">
+                                        <h3>Gabriela Santos</h3>
+                                        <p>Porto (Online)</p>
+                                        <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                    </div>
+                                </div>
+        
+                                <div id="explicadores-list">
+                                    <div class="card">
+                                        <a href="AnaPaula.html">
+                                        <img src="fotos/foto21.jpg" alt="Explicador">
+                                        <div class="favorite-icon"></div>
+                                        <div class="card-info">
+                                            <h3>Ana Paula</h3>
+                                            <p>Porto (Online)</p>
+                                            <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                        </div>
+                                    </a>
+                                    </div>
+            </main>
+
+
+            <section id="resultados">
+                <h2>Algoritmia</h2>
+                <ul id="listaExplicadores">
+                    <!-- Os explicadores encontrados serão listados aqui -->
+                </ul>
+                <main>
+                    <div id="explicadores-list">
+                        <div class="card">
+                            <a href="Ricardo.html">
+                            <img src="fotos/OIP (19).jpeg" alt="Explicador">
+                            <div class="card-info">
+                                <h3>Ricardo</h3>
+                                <p>Porto (Online)</p>
+                                <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                            </div>
+                        </a>
+                        </div>
+        
+                        <div id="explicadores-list">
+                            <div class="card">
+                                <img src="fotos/OIP.jpeg" alt="Explicador">
+                                <div class="favorite-icon"></div>
+                                <div class="card-info">
+                                    <h3>Barbara Bandera</h3>
+                                    <p>Porto (Online)</p>
+                                    <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                </div>
+                            </div>
+        
+                            <div id="explicadores-list">
+                                <div class="card">
+                                    <img src="fotos/OIP (1).jpg" alt="Explicador">
+                                    <div class="favorite-icon"></div>
+                                    <div class="card-info">
+                                        <h3>Sofia Martins</h3>
+                                        <p>Porto (Online)</p>
+                                        <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                    </div>
+                                </div>
+        
+                            <div id="explicadores-list">
+                                <div class="card">
+                                    <img src="fotos/OIP.jpg" alt="Explicador">
+                                    <div class="favorite-icon"></div>
+                                    <div class="card-info">
+                                        <h3>Gabriel Santos</h3>
+                                        <p>Porto (Online)</p>
+                                        <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                    </div>
+                                </div>
+        
+                                <div id="explicadores-list">
+                                    <div class="card">
+                                        <img src="fotos/attractive-1869761_1280.jpg" alt="Explicador">
+                                        <div class="favorite-icon"></div>
+                                        <div class="card-info">
+                                            <h3>Ana Paula</h3>
+                                            <p>Porto (Online)</p>
+                                            <button class="favorite-icon" onclick="toggleFavorito(this)">&#9733;</button> <!-- Ícone de estrela -->
+                                        </div>
+                                    </div>
+            </main>
+
+
+
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="signup e login.css">
+</head>
+<header>
+    <img src="fotos/descarregar.png" alt="Logo do Site" id="logo">
+</header>
+<body>
+    <div class="container">
+        <div id="login-box">
+            <h2>Login</h2>
+            <input type="text" id="login-user" placeholder="Usuário">
+            <input type="password" id="login-pass" placeholder="Senha">
+            <button onclick="login()">Entrar</button>
+            <p id="error-message" style="color: red; display: none;">Não foi possível entrar</p>
+            <p>Não tem conta? <a href="#" onclick="showSignup()">Cadastre-se</a></p>
+        </div>
+        <div id="signup-box" style="display: none;">
+            <h2>Cadastro</h2>
+            <input type="text" id="signup-user" placeholder="Usuário">
+            <input type="password" id="signup-pass" placeholder="Senha">
+            <button onclick="signup()">Cadastrar</button>
+            <p>Já tem uma conta? <a href="#" onclick="showLogin()">Faça login</a></p>
+        </div>
+    </div>
+    <script src="sign.js"></script>
+</body>
+</html>

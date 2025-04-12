@@ -1,0 +1,183 @@
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    width: 80px;
+    height: auto;
+}
+
+
+.profile-container {
+    position: absolute;
+    top: 5px;
+    right: 10px; 
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.profile-pic {
+    width: 50px; /* Aumentando o tamanho */
+    height: 50px;
+    border-radius: 50%; /* Deixa redondo */
+    object-fit: cover;
+    border: 3px solid white; /* Para destacar no fundo azul */
+}
+
+/* Nome do usuário */
+.profile-container h2 {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+
+/* Botão estilizado */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estilização do body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilização do header */
+header {
+    position: relative;
+    background: #0073e6;
+    color: white;
+    padding: 60px 20px 20px; /* Ajuste para evitar sobreposição */
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilização do botão favorito */
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: gray; /* Cinza quando não está favoritado */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Estrela dourada quando favoritado */
+.favorite-icon.favorited {
+    color: gold;
+}
+
+
+button {
+    padding: 10px 15px;
+    background: #005bb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004494;
+}
+
+/* Estilo para os filtros */
+#filters {
+    background: white;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    overflow-x: auto;
+}
+
+/* Estilização dos rótulos */
+#filters label {
+    font-weight: bold;
+    white-space: nowrap; /* Evita quebra de linha nos textos */
+}
+
+/* Ajuste dos selects */
+#filters select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 120px; /* Evita que fiquem pequenos demais */
+}
+
+
+
+/* Ajustar a exibição das explicadores em 3 colunas */
+#explicadores-list {
+    display: flex;  
+    flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo se faltar espaço */
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: left; /* Centraliza os cards na tela */
+}
+
+
+.card {
+    background: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+/* Ajuste das imagens dos professores */
+.card img {
+    width: 100px;  /* Ajuste conforme necessário */
+    height: 100px; /* Mantém a proporção */
+    border-radius: 50%; /* Borda arredondada */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+}
+
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
